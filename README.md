@@ -1,8 +1,16 @@
 # Producto AI · Portfolio de ejercicios
 
-Este repositorio reúne resoluciones de los laboratorios prácticos de la capacitación **Producto AI**, dictada por Albert en su edición de julio de 2026. Los enunciados pertenecen a su [autoría](https://github.com/albertcapacitacion).
+Repositorio de laboratorios prácticos de la capacitación **Producto AI**, dictada por Albert (edición de julio de 2026). Los enunciados pertenecen a su [autoría](https://github.com/albertcapacitacion).
 
-## La capacitación
+## Proyectos
+
+| Proyecto | Qué es | Estado |
+| --- | --- | --- |
+| [**FAT FIDO**](mascota-de-escritorio/) | Mascota pixel-art para el escritorio de Windows, hecha con Python y PySide6. | En desarrollo |
+
+![FAT FIDO, ciclo de reposo](mascota-de-escritorio/assets/native-pet/provisional/idle-animation-preview.gif)
+
+## Sobre la capacitación
 
 Producto AI propone un enfoque práctico para construir productos digitales con la asistencia de inteligencia artificial, sin requerir conocimientos previos de programación. A lo largo de las sesiones se utilizan ChatGPT, Codex, Claude, Google AI Studio y GitHub, cada una en la etapa del proyecto donde resulta más útil.
 
