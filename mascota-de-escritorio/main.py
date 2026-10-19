@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import json
 import sys
-from collections import deque
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Sequence
@@ -29,8 +28,6 @@ APP_DIR = Path(__file__).resolve().parent
 MASTER_SPRITE_PATH = APP_DIR / "mascota_master.png"
 SPRITES_DIR = APP_DIR / "sprites_revision_v2"
 SPRITE_CANVAS_SIZE = (25, 51)
-SOURCE_IMAGE_PATH = APP_DIR / "mascota.png"
-IMAGE_PATH = APP_DIR / "mascota_transparente.png"
 SETTINGS_PATH = APP_DIR / "settings.json"
 # El sprite maestro es pixel art de baja resolución. Se amplía una vez, con
 # vecino más cercano, antes de aplicar la escala que elige la persona usuaria.
@@ -38,10 +35,6 @@ SPRITE_MAGNIFICATION = 8
 DEFAULT_SCALE = 0.70
 MIN_SCALE = 0.40
 MAX_SCALE = 1.40
-# Máxima diferencia permitida por canal entre el fondo y un píxel conectado.
-BACKGROUND_TOLERANCE = 20
-# Las cuatro esquinas deben ser suficientemente parecidas para tratarse de fondo.
-CORNER_TOLERANCE = 15
 
 
 @dataclass
@@ -88,70 +81,6 @@ class Settings:
             ),
             encoding="utf-8",
         )
-
-
-def _within_tolerance(color: tuple[int, int, int], reference: tuple[int, int, int], tolerance: int) -> bool:
-    return all(abs(component - expected) <= tolerance for component, expected in zip(color, reference))
-
-
-def create_transparent_image() -> None:
-    """Crea la copia transparente sin modificar nunca ``mascota.png``.
-
-    El color de fondo se deduce de las cuatro esquinas. Sólo un flood fill que
-    parte de los bordes puede cambiar su alfa; por eso los detalles claros de
-    la mascota que estén encerrados por su contorno permanecen intactos.
-    """
-    if IMAGE_PATH.exists():
-        return  # Una copia ya creada no se reemplaza automáticamente.
-    if not SOURCE_IMAGE_PATH.is_file():
-        raise FileNotFoundError(f"No se encontró la imagen original: {SOURCE_IMAGE_PATH}")
-
-    with Image.open(SOURCE_IMAGE_PATH) as source:
-        image = source.convert("RGBA")
-    width, height = image.size
-    if width < 2 or height < 2:
-        raise RuntimeError("La imagen es demasiado pequeña para identificar el fondo con seguridad.")
-
-    pixels = image.load()
-    corners = [(0, 0), (width - 1, 0), (0, height - 1), (width - 1, height - 1)]
-    corner_colors = [pixels[x, y][:3] for x, y in corners]
-    background = tuple(sorted(color[index] for color in corner_colors)[len(corner_colors) // 2] for index in range(3))
-    if not all(_within_tolerance(color, background, CORNER_TOLERANCE) for color in corner_colors):
-        raise RuntimeError(
-            "Las esquinas no tienen un color de fondo suficientemente uniforme; "
-            "no se generó mascota_transparente.png."
-        )
-
-    pending = deque()
-    visited: set[tuple[int, int]] = set()
-    for x in range(width):
-        pending.extend(((x, 0), (x, height - 1)))
-    for y in range(1, height - 1):
-        pending.extend(((0, y), (width - 1, y)))
-
-    while pending:
-        x, y = pending.popleft()
-        if (x, y) in visited:
-            continue
-        visited.add((x, y))
-        red, green, blue, alpha = pixels[x, y]
-        if alpha == 0 or not _within_tolerance((red, green, blue), background, BACKGROUND_TOLERANCE):
-            continue
-        pixels[x, y] = (red, green, blue, 0)
-        if x > 0:
-            pending.append((x - 1, y))
-        if x < width - 1:
-            pending.append((x + 1, y))
-        if y > 0:
-            pending.append((x, y - 1))
-        if y < height - 1:
-            pending.append((x, y + 1))
-
-    # No se sobrescribe un archivo existente. El temporal evita dejar una
-    # imagen parcial si el guardado falla.
-    temporary_path = IMAGE_PATH.with_suffix(".tmp.png")
-    image.save(temporary_path, format="PNG")
-    temporary_path.replace(IMAGE_PATH)
 
 
 class AnimationController:
