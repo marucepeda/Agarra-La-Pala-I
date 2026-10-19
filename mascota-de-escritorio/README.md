@@ -1,5 +1,4 @@
-﻿# FAT FIDO · mascota de escritorio para Windows
-
+﻿# FAT FIDO · mascota de escritorio
 ![FAT FIDO, ciclo de reposo](assets/native-pet/provisional/idle-animation-preview.gif)
 
 FAT FIDO es una mascota pixel-art en blanco y negro que vive sobre el escritorio de Windows: una ventana sin bordes, con fondo transparente, siempre visible, que se puede arrastrar y que reacciona con animaciones. Está hecha con Python y PySide6 como proyecto del curso Producto AI.
