@@ -1,7 +1,5 @@
 # Producto AI · Portfolio de ejercicios
 
-Repositorio de laboratorios prácticos de la capacitación **Producto AI**, dictada por Albert (edición de julio de 2026). Los enunciados pertenecen a su [autoría](https://github.com/albertcapacitacion).
-
 ## Proyectos
 
 | Proyecto | Qué es | Estado |
@@ -16,6 +14,3 @@ Producto AI propone un enfoque práctico para construir productos digitales con 
 
 El método se organiza en siete pasos: planificar, dividir tareas, implementar, probar, revisar y mejorar, guardar versiones, y desplegar e iterar.
 
-## Más información
-
-Para conocer las capacitaciones de Albert o inscribirse a futuras ediciones (modalidad en vivo y asincrónica), el contacto es [albertcapacitaciondigital@gmail.com](mailto:albertcapacitaciondigital@gmail.com).
