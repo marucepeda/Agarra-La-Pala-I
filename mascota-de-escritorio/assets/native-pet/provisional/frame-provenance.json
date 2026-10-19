@@ -1,0 +1,705 @@
+{
+  "purpose": "Provisional zero-credit native Pets v2 staging set. Structural only; do not treat as visual-semantic approval.",
+  "cell": {
+    "width": 192,
+    "height": 208
+  },
+  "provenance": [
+    {
+      "row": "idle",
+      "frame": 0,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/idle/00.png"
+    },
+    {
+      "row": "idle",
+      "frame": 1,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/idle/01.png"
+    },
+    {
+      "row": "idle",
+      "frame": 2,
+      "source": "sprites_revision_v2/blink.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/idle/02.png"
+    },
+    {
+      "row": "idle",
+      "frame": 3,
+      "source": "sprites_revision_v2/blink.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/idle/03.png"
+    },
+    {
+      "row": "idle",
+      "frame": 4,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/idle/04.png"
+    },
+    {
+      "row": "idle",
+      "frame": 5,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/idle/05.png"
+    },
+    {
+      "row": "running-right",
+      "frame": 0,
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running-right/00.png"
+    },
+    {
+      "row": "running-right",
+      "frame": 1,
+      "source": "sprites_revision_v2/walk_2.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running-right/01.png"
+    },
+    {
+      "row": "running-right",
+      "frame": 2,
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running-right/02.png"
+    },
+    {
+      "row": "running-right",
+      "frame": 3,
+      "source": "sprites_revision_v2/walk_2.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running-right/03.png"
+    },
+    {
+      "row": "running-right",
+      "frame": 4,
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running-right/04.png"
+    },
+    {
+      "row": "running-right",
+      "frame": 5,
+      "source": "sprites_revision_v2/walk_2.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running-right/05.png"
+    },
+    {
+      "row": "running-right",
+      "frame": 6,
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running-right/06.png"
+    },
+    {
+      "row": "running-right",
+      "frame": 7,
+      "source": "sprites_revision_v2/walk_2.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running-right/07.png"
+    },
+    {
+      "row": "running-left",
+      "frame": 0,
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "mirrored duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "frames/running-left/00.png"
+    },
+    {
+      "row": "running-left",
+      "frame": 1,
+      "source": "sprites_revision_v2/walk_2.png",
+      "transform": "mirrored duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "frames/running-left/01.png"
+    },
+    {
+      "row": "running-left",
+      "frame": 2,
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "mirrored duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "frames/running-left/02.png"
+    },
+    {
+      "row": "running-left",
+      "frame": 3,
+      "source": "sprites_revision_v2/walk_2.png",
+      "transform": "mirrored duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "frames/running-left/03.png"
+    },
+    {
+      "row": "running-left",
+      "frame": 4,
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "mirrored duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "frames/running-left/04.png"
+    },
+    {
+      "row": "running-left",
+      "frame": 5,
+      "source": "sprites_revision_v2/walk_2.png",
+      "transform": "mirrored duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "frames/running-left/05.png"
+    },
+    {
+      "row": "running-left",
+      "frame": 6,
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "mirrored duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "frames/running-left/06.png"
+    },
+    {
+      "row": "running-left",
+      "frame": 7,
+      "source": "sprites_revision_v2/walk_2.png",
+      "transform": "mirrored duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "frames/running-left/07.png"
+    },
+    {
+      "row": "waving",
+      "frame": 0,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "transition duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/waving/00.png"
+    },
+    {
+      "row": "waving",
+      "frame": 1,
+      "source": "sprites_revision_v2/wave.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/waving/01.png"
+    },
+    {
+      "row": "waving",
+      "frame": 2,
+      "source": "sprites_revision_v2/wave.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/waving/02.png"
+    },
+    {
+      "row": "waving",
+      "frame": 3,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "transition duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/waving/03.png"
+    },
+    {
+      "row": "jumping",
+      "frame": 0,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "vertical transform",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/jumping/00.png"
+    },
+    {
+      "row": "jumping",
+      "frame": 1,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "vertical transform",
+      "vertical_offset_px": -18,
+      "mirrored": false,
+      "output": "frames/jumping/01.png"
+    },
+    {
+      "row": "jumping",
+      "frame": 2,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "vertical transform",
+      "vertical_offset_px": -34,
+      "mirrored": false,
+      "output": "frames/jumping/02.png"
+    },
+    {
+      "row": "jumping",
+      "frame": 3,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "vertical transform",
+      "vertical_offset_px": -18,
+      "mirrored": false,
+      "output": "frames/jumping/03.png"
+    },
+    {
+      "row": "jumping",
+      "frame": 4,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "vertical transform",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/jumping/04.png"
+    },
+    {
+      "row": "failed",
+      "frame": 0,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; not a verified failure reaction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/failed/00.png"
+    },
+    {
+      "row": "failed",
+      "frame": 1,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; not a verified failure reaction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/failed/01.png"
+    },
+    {
+      "row": "failed",
+      "frame": 2,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; not a verified failure reaction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/failed/02.png"
+    },
+    {
+      "row": "failed",
+      "frame": 3,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; not a verified failure reaction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/failed/03.png"
+    },
+    {
+      "row": "failed",
+      "frame": 4,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; not a verified failure reaction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/failed/04.png"
+    },
+    {
+      "row": "failed",
+      "frame": 5,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; not a verified failure reaction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/failed/05.png"
+    },
+    {
+      "row": "failed",
+      "frame": 6,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; not a verified failure reaction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/failed/06.png"
+    },
+    {
+      "row": "failed",
+      "frame": 7,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; not a verified failure reaction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/failed/07.png"
+    },
+    {
+      "row": "waiting",
+      "frame": 0,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; approximate waiting posture",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/waiting/00.png"
+    },
+    {
+      "row": "waiting",
+      "frame": 1,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; approximate waiting posture",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/waiting/01.png"
+    },
+    {
+      "row": "waiting",
+      "frame": 2,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; approximate waiting posture",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/waiting/02.png"
+    },
+    {
+      "row": "waiting",
+      "frame": 3,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; approximate waiting posture",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/waiting/03.png"
+    },
+    {
+      "row": "waiting",
+      "frame": 4,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; approximate waiting posture",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/waiting/04.png"
+    },
+    {
+      "row": "waiting",
+      "frame": 5,
+      "source": "sprites_revision_v2/sit.png",
+      "transform": "duplicate; approximate waiting posture",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/waiting/05.png"
+    },
+    {
+      "row": "running",
+      "frame": 0,
+      "source": "sprites_revision_v2/typing_1.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running/00.png"
+    },
+    {
+      "row": "running",
+      "frame": 1,
+      "source": "sprites_revision_v2/typing_2.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running/01.png"
+    },
+    {
+      "row": "running",
+      "frame": 2,
+      "source": "sprites_revision_v2/typing_1.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running/02.png"
+    },
+    {
+      "row": "running",
+      "frame": 3,
+      "source": "sprites_revision_v2/typing_2.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running/03.png"
+    },
+    {
+      "row": "running",
+      "frame": 4,
+      "source": "sprites_revision_v2/typing_1.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running/04.png"
+    },
+    {
+      "row": "running",
+      "frame": 5,
+      "source": "sprites_revision_v2/typing_2.png",
+      "transform": "duplicate",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/running/05.png"
+    },
+    {
+      "row": "review",
+      "frame": 0,
+      "source": "sprites_revision_v2/blink.png",
+      "transform": "duplicate; not a verified review action",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/review/00.png"
+    },
+    {
+      "row": "review",
+      "frame": 1,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate; not a verified review action",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/review/01.png"
+    },
+    {
+      "row": "review",
+      "frame": 2,
+      "source": "sprites_revision_v2/blink.png",
+      "transform": "duplicate; not a verified review action",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/review/02.png"
+    },
+    {
+      "row": "review",
+      "frame": 3,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate; not a verified review action",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/review/03.png"
+    },
+    {
+      "row": "review",
+      "frame": 4,
+      "source": "sprites_revision_v2/blink.png",
+      "transform": "duplicate; not a verified review action",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/review/04.png"
+    },
+    {
+      "row": "review",
+      "frame": 5,
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate; not a verified review action",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "frames/review/05.png"
+    },
+    {
+      "row": 9,
+      "frame": 0,
+      "direction": "000",
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate; frontal pose does not prove upward direction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "look-cells/000.png"
+    },
+    {
+      "row": 9,
+      "frame": 1,
+      "direction": "022.5",
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate; frontal pose does not prove up-right direction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "look-cells/022.5.png"
+    },
+    {
+      "row": 9,
+      "frame": 2,
+      "direction": "045",
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate; frontal pose does not prove up-right direction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "look-cells/045.png"
+    },
+    {
+      "row": 9,
+      "frame": 3,
+      "direction": "067.5",
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "approximate rightward profile; not a genuine up-right pose",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "look-cells/067.5.png"
+    },
+    {
+      "row": 9,
+      "frame": 4,
+      "direction": "090",
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "rightward profile",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "look-cells/090.png"
+    },
+    {
+      "row": 9,
+      "frame": 5,
+      "direction": "112.5",
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "approximate rightward profile; not a genuine down-right pose",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "look-cells/112.5.png"
+    },
+    {
+      "row": 9,
+      "frame": 6,
+      "direction": "135",
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate; frontal pose does not prove down-right direction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "look-cells/135.png"
+    },
+    {
+      "row": 9,
+      "frame": 7,
+      "direction": "157.5",
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate; frontal pose does not prove down-right direction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "look-cells/157.5.png"
+    },
+    {
+      "row": 10,
+      "frame": 0,
+      "direction": "180",
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate; frontal pose does not prove downward direction",
+      "vertical_offset_px": 0,
+      "mirrored": false,
+      "output": "look-cells/180.png"
+    },
+    {
+      "row": 10,
+      "frame": 1,
+      "direction": "202.5",
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate mirrored; frontal pose does not prove down-left direction",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "look-cells/202.5.png"
+    },
+    {
+      "row": 10,
+      "frame": 2,
+      "direction": "225",
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate mirrored; frontal pose does not prove down-left direction",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "look-cells/225.png"
+    },
+    {
+      "row": 10,
+      "frame": 3,
+      "direction": "247.5",
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "approximate mirrored profile; not a genuine down-left pose",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "look-cells/247.5.png"
+    },
+    {
+      "row": 10,
+      "frame": 4,
+      "direction": "270",
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "mirrored leftward profile",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "look-cells/270.png"
+    },
+    {
+      "row": 10,
+      "frame": 5,
+      "direction": "292.5",
+      "source": "sprites_revision_v2/walk_1.png",
+      "transform": "approximate mirrored profile; not a genuine up-left pose",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "look-cells/292.5.png"
+    },
+    {
+      "row": 10,
+      "frame": 6,
+      "direction": "315",
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate mirrored; frontal pose does not prove up-left direction",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "look-cells/315.png"
+    },
+    {
+      "row": 10,
+      "frame": 7,
+      "direction": "337.5",
+      "source": "sprites_revision_v2/idle.png",
+      "transform": "duplicate mirrored; frontal pose does not prove up-left direction",
+      "vertical_offset_px": 0,
+      "mirrored": true,
+      "output": "look-cells/337.5.png"
+    }
+  ],
+  "known_gaps": [
+    "No genuine up, down, or diagonal look poses exist in the source.",
+    "No verified failed reaction exists in the source.",
+    "No verified review/inspection action exists in the source.",
+    "Most sequences contain duplicated original frames; only jumping applies a vertical offset transform."
+  ],
+  "derived_sheet": "la-pala-v2-idle-refined.png",
+  "idle_refinement": {
+    "columns": [
+      2,
+      3
+    ],
+    "sequence": [
+      "open",
+      "open",
+      "closed",
+      "closed",
+      "open",
+      "open"
+    ],
+    "source": "../blink-fix/blink_fixed.png",
+    "transform": "same local staging anchor as provisional run; nearest-neighbor scale 1.4; no interpolation"
+  }
+}

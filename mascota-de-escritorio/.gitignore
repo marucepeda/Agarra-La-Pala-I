@@ -8,6 +8,12 @@ venv/
 # Configuracion local
 settings.json
 
+# Datos, salidas de trabajo y previews locales: nunca publicar sin revisión.
+work/
+blink_fixed.png
+provisional_sheet.png
+Local v2 atlas validator
+
 # Originales y respaldos locales
 mascota.png
 mascota_backup.png

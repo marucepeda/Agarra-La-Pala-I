@@ -1,0 +1,74 @@
+{
+  "ok": true,
+  "layout": {
+    "width": 1536,
+    "height": 2288,
+    "rows": 11,
+    "columns": 8,
+    "cell_width": 192,
+    "cell_height": 208,
+    "version": 2
+  },
+  "blink_source_verification": {
+    "idle_size": [
+      57,
+      111
+    ],
+    "blink_size": [
+      57,
+      111
+    ],
+    "difference_pixel_count": 20,
+    "difference_bbox": [
+      24,
+      35,
+      35,
+      39
+    ],
+    "eye_region": [
+      23,
+      34,
+      36,
+      40
+    ],
+    "all_differences_inside_eye_region": true
+  },
+  "idle_change": {
+    "replaced_columns": [
+      2,
+      3
+    ],
+    "sequence": [
+      "open",
+      "open",
+      "closed",
+      "closed",
+      "open",
+      "open"
+    ],
+    "changed_atlas_pixel_count": 19198,
+    "all_changes_limited_to_intended_idle_cells": true
+  },
+  "preservation": {
+    "rows_1_through_10_pixel_identical": true,
+    "unmodified_idle_cells_pixel_identical": true,
+    "inserted_cells_match_registered_blink": true,
+    "input_hashes_unchanged_during_run": true,
+    "input_sha256": {
+      "la-pala-v2-provisional.png": "7a4a86bd2d695b08537367d46a820c5e307bb6a8ca1f2437b586d072569d0bf9",
+      "frame-provenance.json": "a94bee1d8d9e91586eaecd9e9f6608cf5a18a5aab8da6f24fdf4e288f356cd32",
+      "idle.png": "1514273b1a2d6e1bcbfda558492a811bca72e2a16c1fd63e69aaf76520481593",
+      "blink_fixed.png": "2b3767761811aef0ccd83309a5d4e5fdaf906632eb1ba053ee502ab02dfa73a1"
+    }
+  },
+  "limits": [
+    "The provisional atlas still contains the previously documented semantic placeholders in non-idle states and look-direction rows.",
+    "This refinement changes only idle columns 2 and 3; it does not make other placeholder animations faithful."
+  ],
+  "output": "la-pala-v2-idle-refined.png",
+  "input_paths": {
+    "provisional_atlas": "../../work/la-pala-native-run/provisional/la-pala-v2-provisional.png",
+    "idle_source": "sprites_revision_v2/idle.png",
+    "blink_source": "work/la-pala-native-run/blink-fix/blink_fixed.png"
+  }
+}
