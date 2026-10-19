@@ -4,10 +4,6 @@
 
 FAT FIDO es una mascota pixel-art en blanco y negro que vive sobre el escritorio de Windows: una ventana sin bordes, con fondo transparente, siempre visible, que se puede arrastrar y que reacciona con animaciones. Está hecha con Python y PySide6 como proyecto del curso Producto AI.
 
-## Para quién y por qué
-
-> **Completar (2 o 3 líneas):** quién es la persona usuaria, qué necesidad cubre una mascota de escritorio (compañía mientras se trabaja, identidad de marca, etc.) y cómo sabrías que funciona.
-
 ## Funcionalidades
 
 - Ventana sin bordes, transparente y siempre visible.
