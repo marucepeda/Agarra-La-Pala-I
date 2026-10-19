@@ -42,6 +42,7 @@ La aplicación puede crear `settings.json` para guardar preferencias locales. Es
 - `main.py`: aplicación principal.
 - `mascota_master.png`: sprite maestro del reposo.
 - `sprites_revision_v2/`: sprites utilizados por las animaciones.
+- `assets/native-pet/`: assets de revisión para una futura mascota nativa. El sheet v2 actual está validado técnicamente, pero se marca como **provisional** mientras existan poses o direcciones pendientes de arte genuino.
 - `requirements.txt`: dependencias de Python.
 
 ## Tecnologías
