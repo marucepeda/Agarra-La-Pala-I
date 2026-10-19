@@ -1,0 +1,46 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Configuracion local
+settings.json
+
+# Originales y respaldos locales
+mascota.png
+mascota_backup.png
+mascota_transparente.png
+main_backup.py
+main_pre_animaciones.py
+main_antes_*.py
+README_antes_de_limpieza.md
+restaurar_reposo.py
+
+# Scripts y artefactos de diagnostico
+aplicar_animaciones.py
+comparar_reparacion.py
+corregir_calidad.py
+crear_diagnostico.py
+crear_hoja_poses.py
+diagnostico_*.png
+diagnostico_*.py
+extraer_sprites_v2.py
+inspeccionar_poses.py
+inventario_sprites.py
+mascota_master_*_preview.png
+poses_columna_derecha.png
+preparar_sprites.py
+reparar_caras.py
+revision_*.png
+revisar_alfa.py
+comparacion_reparacion.png
+_candidate_*.png
+_inspection_*.png
+
+# Material experimental local
+sprites_revision/
+sprites_revision_final/
+sprites_revision_v2_backup_antes_reparacion/
+sprites_reparados_candidatos/
